@@ -33,3 +33,8 @@
     padding-left: 0;
   }
 }
+@media (max-width: 1030px) {
+  .nav-head {
+    padding-left: 80px;
+  }
+}

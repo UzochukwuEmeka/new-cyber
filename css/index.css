@@ -147,7 +147,7 @@ body {
 
 /* Cyber Security Style */
 .cyber-journey {
-  height: 95vh;
+  height: 120vh;
   padding-top: 90px;
   background-image: url(/image/Frame\ 39730.png);
   object-fit: contain;
@@ -205,16 +205,22 @@ body {
 .Infographic-section {
   height: 426px;
   padding-top: 50px;
-
 }
 
 /* Admission style */
 .admission {
   background-color: #fafafa;
-  padding-top: 5px;
-  
+  padding-top: 50px;
 }
+.real-header h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
 
+  color: #2e2e30;
+}
 /* FAQ */
 .faq {
   padding-top: 50px;
@@ -301,5 +307,10 @@ body {
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;
+  }
+}
+@media (max-width: 800px) {
+  .real-header h4 {
+    font-size: 20px;
   }
 }

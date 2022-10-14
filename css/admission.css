@@ -22,15 +22,7 @@
 .admission {
   background: #fefefe;
 }
-.real-header h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
 
-  color: #2e2e30;
-}
 .about-cb-girl p {
   font-family: "Poppins";
   font-style: normal;
@@ -124,10 +116,10 @@
 }
 .applicant-cards {
   width: 80%;
-  height: 200px;
+  height: 15rem;
 }
 .applicant-cards .card-body {
-  padding: 3rem 3rem !important;
+  padding: 3rem 1rem !important;
 }
 .applicant-cards .card-body .card-text {
   font-family: "Poppins", sans-serif;
