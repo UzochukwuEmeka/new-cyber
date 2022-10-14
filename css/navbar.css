@@ -28,13 +28,14 @@
 .forms-nav {
   color: #ffb700 !important;
 }
+
+@media (max-width: 1134px) {
+  .nav-head {
+    padding-left: 80px;
+  }
+}
 @media (max-width: 992px) {
   .nav-head {
     padding-left: 0;
-  }
-}
-@media (max-width: 1030px) {
-  .nav-head {
-    padding-left: 80px;
   }
 }
