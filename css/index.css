@@ -213,11 +213,11 @@ body {
   padding-top: 50px;
 }
 .real-header h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 30px !important ;
+  line-height: 45px !important;
 
   color: #2e2e30;
 }
