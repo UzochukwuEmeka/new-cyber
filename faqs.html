@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/accordion.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/admission.css">
+        <link rel="stylesheet" href="css/faq.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <title>
+            Cyber-Girls
+                    Fellowship FAQs
+        </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light py-3 ">
+            <div class="container ">
+                <a class="navbar-brand navbrand-image " href="#">
+                    <img src="image/logo.png" alt="">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               
+                <div class="collapse navbar-collapse justify-content-etween nav-head" id="navbarNavAltMarkup">
+                    <div class="navbar-nav justify-content-center inner-nav">
+                        <a class="nav-link nav-links   pe-3" aria-current="page" href="index.html">Home</a>
+                        <a
+                            class="nav-link nav-links  pe-3"
+                            href="addmission.html"
+                            tabindex="-1"
+                            aria-disabled="true"
+                        >Admission</a>
+                        <a
+                            class="nav-link nav-links pe-3  "
+                            href="life-cyber-girl.html"
+                            tabindex="-1"
+                            aria-disabled="true"
+                        >Life of a CyberGirl</a>
+                        <a
+                            class="nav-link nav-links  actives pe-3 "
+                            href="faqs.html"
+                            tabindex="-1"
+                            aria-disabled="true"
+                        >FAQs</a>
+                        <a
+                            class="nav-link  forms-nav ps-lg-5 "
+                            href="login.html"
+                            tabindex="-1"
+                            aria-disabled="true"
+                        >Login</a>
+                        <a
+                            class="nav-link  forms-nav  pe-lg-5"
+                            href="signup.html"
+                            tabindex="-1"
+                            aria-disabled="true"
+                        >Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="admission-big-text text-center   ">
+            <div class="big-text">
+                <h1>FAQs</h1>
+            </div>
+        </section>
+        <section class="faqs-tab">
+            <div class="container text-center">
+                <div class="faq-body-head text-center pt-5">
+                    <h4>Got a Question?</h4>
+                    <p>We have some similar answered questions to get you started.</p>
+                </div>
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks m-2" onclick="openCity(event, 'London')" id="defaultOpen">About the program</button>
+                    <button class="tablinks m-2 " onclick="openCity(event, 'Paris')">About You</button>
+                    <button class="tablinks m-2 " onclick="openCity(event, 'Tokyo')">About the application   process</button>
+                </div>
+                <!-- Tab content -->
+                <div id="London" class="tabcontent col-12  text-center">
+                    <div class="row ">
+                        <div class="col-12 pt-4">
+                            <div class="faq-body">
+                                <div class="faq-body-head text-center">
+                                    <h4>About the program</h4>
+                                </div>
+                                <div class="accordian d-lg-block d-none">
+                                    <div class="accordian-item ">
+                                        <button id="accordian-button-1" aria-expanded="false">
+                                            <span class="accordian-title mt-3">Can anyone in Africa apply for the fellowship?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>This fellowship is only open to female applicants aged 18-28 who are citizens and residents of African countries.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-2">
+                                        <button id="accordian-button-2 " aria-expanded="false">
+                                            <span class="accordian-title  mt-3"> Do I have to own a laptop to participate in the fellowship?</span>
+                                            <span class="icon " aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content ">
+                                            <p>Due to the generosity of our partners and donors, beneficiaries of the CyberGirls Fellowship owning a personal computer is a requirement to participate in the fellowship</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">
+                                                Is the training physical or virtual?
+                                            </span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>The training is fully virtual for all beneficiaries of the fellowship program with a few in-person gatherings in beneficiary countries. However, we have a residential program for exceptional beneficiaries that will require their physical presence at our residential hub.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">   What level of complexity is the training? Is it for beginners?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>Yes. The training takes you through basic digital literacy to intermediate cybersecurity skills. The participant is only required to have a high interest in pursuing a career in cybersecurity.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3"> When are the start and end dates for the training?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>The training commences on 24th March 2023 till 23rd October 2023.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">  How many days a week and how many hours will the training hold?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>The training holds on weekdays (Mondays to Fridays) from 10:00 to 14:00 WAT (West African Time) except for National Holidays in Nigeria.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">  How much would it cost to join the fellowship program?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>The CyberGirls Fellowship Program is free. You would not be required to make any payments before admission or during the program.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">  What is the time commitment?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>The Fellowship is intensive and will require active and engaged participation to successfully create a meaningful fellowship experience.</p>
+                                            <p>Fellows will commit to:</p>
+                                            <li>Devoting at least 4 hours daily to training and other fellowship activities</li>
+                                            <li>Collaborating with other fellows to work on class activities, group projects, and external presentations</li>
+                                            <li>Participating in the full programming of the fellowship including masterclasses, mentoring sessions, technical competitions (e.g., capture the flag), open days, coaching sessions, and other internal activities.</li>
+                                            <li>Contributing their knowledge, leadership, creativity, and voice to other Foundation programs. Whether serving as volunteers, mentors, or facilitating local trainings.</li>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3"> Will there be internship/job placement for all the participants who attend the program?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>Only the best CyberGirls beneficiaries who successfully complete the training will graduate and upon graduation, will (based on availability and suitability) be offered internship/job placement opportunities within Africa and across the world.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3"> What is included in the Fellowship?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>The learning journey begins with cybersecurity fundamentals and moves on to more specialised niche cybersecurity learning paths which fellows will decide on midway through the fellowship. These paths include Threat Intelligence, Cloud Security, Penetration/Vulnerability Testing, Governance Risk and Compliance, Incident Analysis/Response (SOC Analyst Level 1), and Web Application Testing/DevSecOps.</p>
+                                            <p>You will also be exposed to opportunities such as mentoring sessions with leading female cybersecurity professionals, hands-on coaching sessions, masterclasses, and fireside chats with leaders from across the world, and a landscape that connects you with other budding cybersecurity talents in Africa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq-body-text container d-lg-none d-block ">
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: Can anyone in Africa apply for the fellowship?
+                                    </h5>
+                                    <p class="question ">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                    This fellowship is only open to female applicants aged 18-28 who are citizens and residents of African countries.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4 ">
+                                        Q: Do I have to own a laptop to participate in the fellowship?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                    Due to the generosity of our partners and donors, beneficiaries of the CyberGirls Fellowship owning a personal computer is a requirement to participate in the fellowship.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: Is the training physical or virtual?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                    The training is fully virtual for all beneficiaries of the fellowship program with a few in-person gatherings in beneficiary countries. However, we have a residential program for exceptional beneficiaries that will require their physical presence at our residential hub.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: What level of complexity is the training? Is it for beginners?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                    Yes. The training takes you through basic digital literacy to intermediate cybersecurity skills. The participant is only required to have a high interest in pursuing a career in cybersecurity.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: When are the start and end dates for the training?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                    The training commences on 24th March 2023 till 23rd October 2023.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: How many days a week and how many hours will the training hold?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                    The training holds on weekdays (Mondays to Fridays) from 10:00 to 14:00 WAT (West African Time) except for National Holidays in Nigeria.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: How much would it cost to join the fellowship program?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                    The CyberGirls Fellowship Program is free. You would not be required to make any payments before admission or during the program.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Paris" class="tabcontent">
+                    <div class="row pt-3 about-you justify-content-center align-items-center">
+                        <div class="col-12">
+                            <div class="faq-body">
+                                <div class="faq-body-head text-center">
+                                    <h4>About You</h4>
+                                </div>
+                                <div class="accordian d-lg-block d-none">
+                                    <div class="accordian-item ">
+                                        <button id="accordian-button-1" aria-expanded="false">
+                                            <span class="accordian-title mt-3">Is English proficiency required?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>Yes, Fellows must be fluent in spoken and written English as all programming is conducted in English.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-2">
+                                        <button id="accordian-button-2 " aria-expanded="false">
+                                            <span class="accordian-title  mt-3">
+                                                How does the Foundation accommodate applicants and Fellows living with disabilities / medical
+                                                conditions?
+                                            </span>
+                                            <span class="icon " aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content ">
+                                            <p>It is important to us that applicants with disabilities can fully participate in our process. The Foundation will provide reasonable accommodations deemed necessary for qualified applicants and Fellows to participate in the selection process and in the Fellowship. If you are a qualified applicant and require a reasonable accommodation to complete the application, please contact the admissions team.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">
+                                                Do I need to cover the costs of travel for the Fellowship gatherings?
+                                            </span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>The Foundation covers visas, transportation, and accommodation for all compulsory out-of-country in-person convenings. While we can provide support in procuring visas for voluntary in-person convenings, fellows are responsible for covering any visa costs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq-body-text container d-lg-none d-block ">
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: Is English proficiency required?
+                                    </h5>
+                                    <p class="question ">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                   Yes, Fellows must be fluent in spoken and written English as all programming is conducted in English.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4 ">
+                                        Q: How does the Foundation accommodate applicants and Fellows living with disabilities and medical conditions?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                              It is important to us that applicants with disabilities can fully participate in our process. The Foundation will provide reasonable accommodations deemed necessary for qualified applicants and Fellows to participate in the selection process and in the Fellowship. If you are a qualified applicant and require a reasonable accommodation to complete the application, please contact the admissions team.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q:  Do I need to cover the costs of travel for the Fellowship gatherings?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                                        The Foundation covers visas, transportation, and accommodation for all compulsory out-of-country in-person convenings. While we can provide support in procuring visas for voluntary in-person convenings, fellows are responsible for covering any visa costs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Tokyo" class="tabcontent">
+                    <div class="row pt-5 about-application">
+                        <div class="col-12">
+                            <div class="faq-body">
+                                <div class="faq-body-head text-center">
+                                    <h4>About the application process</h4>
+                                </div>
+                                <div class="accordian d-lg-block d-none">
+                                    <div class="accordian-item ">
+                                        <button id="accordian-button-1" aria-expanded="false">
+                                            <span class="accordian-title mt-3">If I am not chosen, can I apply again in the future?</span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>Absolutely! We would be happy to receive applications from applicants who did not make it into this cohort, provided they are still eligible.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-2">
+                                        <button id="accordian-button-2 " aria-expanded="false">
+                                            <span class="accordian-title  mt-3">
+                                                Can I apply if I am a beneficiary of another Cybersafe Foundation program?
+                                            </span>
+                                            <span class="icon " aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content ">
+                                            <p>Beneficiaries of other CyberSafe Foundation programs are welcome to apply to the CyberGirls Fellowship provided they are not currently undergoing training.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">
+                                                Can I apply if I am almost 18?
+                                            </span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>Applicants are encouraged to apply if they will be between the ages of 18 – 28 as of the commencement of the fellowship – on 24th March 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">
+                                                Who can be my referee?
+                                            </span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>References are an integral part of the CyberGirls application process. You must supply the names of two referees when you submit your application. Please select your referees carefully. They should be people who can comment on your general suitability to join the fellowship. Referees should be known to you, either in an academic or professional capacity. They should not be a relative or close personal friend.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">
+                                                Can I edit my application after submitting it?
+                                            </span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p>No, you cannot. Once an application has been submitted it cannot be retracted or edited. We advise that you complete the application form with extra care in a relaxed environment to avoid any mistakes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordian-item mt-3">
+                                        <button id="accordian-button-3" aria-expanded="false">
+                                            <span class="accordian-title mt-3">
+                                                What means of identification is valid?
+                                            </span>
+                                            <span class="icon" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="accordian-content">
+                                            <p> To complete the application you are to attach a valid means of identification. A valid means of identification would be one that supports your nationality claim. Our preferred means of identification are your international passport or national identity card.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq-body-text container d-lg-none d-block ">
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: If I am not chosen, can I apply again in the future?
+                                    </h5>
+                                    <p class="question ">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                      Absolutely! We would be happy to receive applications from applicants who did not make it into this cohort, provided they are still eligible.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4 ">
+                                        Q: Can I apply if I am a beneficiary of another Cybersafe Foundation program?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+                        Beneficiaries of other CyberSafe Foundation programs are welcome to apply to the CyberGirls Fellowship provided they are not currently undergoing training.
+                                    </p>
+                                    <h5 class="faq-sub-header mt-4">
+                                        Q: Can I apply if I am almost 18?
+                                    </h5>
+                                    <p class="question">
+                                        <i class="bi bi-chat-square-dots answer-icon"></i>
+                                        ::
+    Applicants are encouraged to apply if they will be between the ages of 18 – 28 as of the commencement of the fellowship – on 24th March 2023
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="admission questions text-sm-start text-center">
+            <div class="container">
+                <div class="row justify-content-ceter align-items-center">
+                    <div class="col-lg-6 col-12 admission-image">
+                        <img src="image/phone_PNG49049 1@2x.png" class="img-fluid telephone-img" alt="">
+                    </div>
+                    <div class="col-lg-6 col-12 admission-text">
+                        
+                        <div class="header mb-3">
+                            <h3>
+                                Contact the 
+                                CyberGirls Admission Team
+                            </h3>
+                        </div>
+                        <div class="mt-2">
+                            <p>There is no such thing as an “Ideal CyberGirls”</p>
+                            <p>
+                                If you have any questions on the admission process please refer to the FAQs. If you still need to contact us, send an email to our admissions team at      <a href="cgfellowship@cybersafefoundation.org">cgfellowship@cybersafefoundation.org</a> or call us on +234 815 7589 260
+                            </p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="footer">
+            <div class="container-fluid text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 footer-header">
+                        <div class="row justify-content-lg-between align-items-center">
+                            <div class="col-lg-5 col-12 footer-logo pe-4">
+                                <img src="image/logo.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-7  d-lg-block d-none social">
+                                <a href=" https://instagram.com/cybersafehq">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href=" https://linkedin.com/company/cybersafefoundation">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href=" ttps://twitter.com/cybersafehq">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href=" https://facebook.com/cybersafefoundation">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 text-start mt-5  footer-body">
+                            <div class="row  footer-list">
+                                <div class="col-lg-3 col-6 first-col ">
+                                    <ul>
+                                        <li>
+                                            <h5>About cybersafe foundation</h5>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href="">
+                                                CyberSafe Foundation is Africa’s leading non-governmental organization in the digital development domain, on a mission to facilitate pockets of changes that ensure inclusive and safe digital access in Africa, especially for the most vulnerable in our society.
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-3 d-lg-block d-none text-start ">
+                                    <ul>
+                                        <li>
+                                            <h5>Quick Links</h5>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href="https://linkedin.com/company/cybersafefoundation">
+                                                About Fellowship
+                                            </a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=" https://twitter.com/cybersafehq">   Application Status</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=" https://facebook.com/cybersafefoundation">   Application guide</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=" https://instagram.com/cybersafehq">  FAQs</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=" https://instagram.com/cybersafehq">
+                                                Privacy Policy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <ul>
+                                        <li>
+                                            <h5>Contact Us</h5>
+                                        </li>
+                                        <li>
+                                            <h5 class="footer-sub-header">Address</h5>
+                                        </li>
+                                        <li class="mt-1">
+                                            <a href="#">
+                                               -The Waterside, 5 Admiralty Road, off Admiralty Way, Lekki Phase 1, Lagos, Nigeria
+                                            </a>
+                                        </li>
+                                        <li class="mt-1">
+                                            <a href="">
+                                                -United State of America 110 W Randol Mill Rd Suite 240 Arlington, TX 76011
+                                            </a>
+                                        </li>
+                                        <li class="mt-1">
+                                            <a href="">
+                                                -Workshed, 47 Nungua Link Baatsona Spintex Road, Accra Ghana
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <h5 class="footer-sub-header">Phone</h5>
+                                        </li>
+                                        <li class="mt-1">
+                                            <a href="">
+                                                (+234) 814 1969 381
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="social-box col-12  d-lg-none d-block">
+                                    <div class=" white-box">
+                                        <a href="">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-messenger"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <hr class="d-lg-block d-none">
+                                    <p class="copy-right">  ©2022. All rights reserved</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </body>
+    <script src="js/accordion.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

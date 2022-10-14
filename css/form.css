@@ -1,0 +1,277 @@
+@import url("variables.css");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap");
+
+/* Container */
+
+.form-section {
+  background-color: #fafafa;
+  height: 95vh;
+}
+.inner-container {
+  height: auto;
+  padding-top: 35px;
+}
+
+.form-text-column {
+  padding-left: 120px !important;
+}
+
+.form-fill {
+  padding-right: 120px !important;
+  position: relative;
+  z-index: 10;
+}
+/* First Column */
+.form-text .form-header-pic .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.form-body-text h1,
+.form-body-text p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+}
+.form-body-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.width-50 {
+  width: 50%;
+}
+.ml-auto {
+  margin-left: auto;
+}
+/* Form - Second Column*/
+
+.form-step {
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 400px;
+}
+
+.form-step::-webkit-scrollbar {
+  width: 1px;
+}
+
+.form-step::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.form-step::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.form-step::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.formstep-active {
+  display: block;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.inner-form {
+  position: relative;
+  z-index: 10;
+}
+.content-head {
+  width: 100%;
+  overflow: auto;
+}
+.form-inner-header {
+  width: 100%;
+  overflow: auto;
+}
+
+.progress-bars {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 30px;
+  counter-reset: step;
+}
+.progress-bars::before,
+.progress-line {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: #2e2e30;
+  z-index: -1;
+}
+.progress-line {
+  width: 0;
+  background-color: #ffb700;
+  transition: 1s;
+}
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+.progress-step:last-child::before {
+  content: "";
+  height: 7px;
+  width: 14px;
+  border-bottom: 2px solid #2e2e30;
+  border-left: 2px solid #2e2e30;
+  position: absolute;
+  top: 50%;
+  left: 96.4%;
+  /* transform: translate(-50%, -60%) rotate(-45deg); */
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transform-origin: center center;
+}
+.progress-step {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2e2e30;
+}
+
+.progress-step-active {
+  color: #ffb700;
+  border: 1px solid #ffb700;
+}
+.progress-step-active:last-child::before {
+  border-bottom: 2px solid #ffb700;
+  border-left: 2px solid #ffb700;
+}
+.form {
+  margin: 0 auto;
+  border: none;
+  width: 95%;
+  height: auto;
+  left: 487px;
+  top: 0px;
+  padding: 5px 25px 0 25px;
+  background-color: #fff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.input-group {
+  margin: 1rem 0;
+}
+.btns {
+  padding: 12px 30px;
+}
+.home-btn {
+  padding: 10px 38px;
+}
+
+.btn-groups {
+  gap: 1.6rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Form */
+.field {
+  margin-top: 25px;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #828283;
+}
+.input {
+  border: 0;
+  width: 95%;
+  background-color: inherit;
+  outline: none;
+  transition: 0.6s;
+  margin: 0 2px;
+  padding: 2px 0px;
+}
+
+.input:focus {
+  padding-left: 24px;
+}
+.fa,
+.bi {
+  color: #969697;
+  cursor: pointer;
+  margin-left: -18px;
+  font-size: 16px;
+}
+
+.question-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0;
+  color: #000000;
+}
+.bottom-label {
+  margin-top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+
+  color: #828283;
+}
+.question .accpect {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.form-select:focus,
+.form-select:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.inner-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #2e2e30;
+}
+.last-step .images {
+  margin-top: 50px;
+}
+/* Input Default style */
+.default-style {
+  border: none !important;
+  outline: none !important;
+}
+
+.academics {
+  padding-left: 6px !important;
+}
+/* Link to sign in form */
+.account-text {
+  margin: 0 auto;
+  text-align: center;
+}

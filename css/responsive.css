@@ -1,0 +1,273 @@
+@import url("variables.css");
+
+.mobile-screen {
+  padding-top: 80px;
+  background-color: #fafafa;
+}
+
+.bg-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url(/image/carousel-image@2x.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  position: relative;
+  color: white;
+}
+
+.mobile-screen .mobile-home .header-text h1,
+.mobile-screen .mobile-home .body-text p {
+  z-index: 10;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+}
+.mobile-screen .mobile-home .header-text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fafafa;
+}
+.mobile-carousel-container {
+  padding-top: 60px;
+}
+
+.mobile-carousel-btn {
+  padding: 8px 10px;
+}
+
+/* tablet */
+
+@media (max-width: 1336px) {
+  .carousel-indicators [data-bs-target] {
+    margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cyber-journey {
+    height: auto;
+  }
+  .card {
+    width: 100%;
+  }
+  .cyber-journey .container .cyber-text {
+    margin-top: 20px;
+  }
+  .hero-section .head-text {
+    font-size: 50px;
+  }
+  .right-card {
+    left: 0;
+    bottom: 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .cyber-journey .container .cyber-text {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .carousel-indicators {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar .navbar-brand {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero-section .head-text {
+    font-size: 50px;
+  }
+  .right-card {
+    left: 0;
+    bottom: 0;
+  }
+  .cyber-journey {
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .cyber-journey .container .cyber-text {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 791px) {
+  /* Cyber journey */
+  .cyber-journey {
+    height: auto;
+  }
+  .card {
+    width: 100%;
+  }
+  .cyber-journey .container .cyber-text {
+    margin-top: 20px;
+  }
+  .admission-text {
+    margin-right: 60px;
+  }
+
+  /* Accordion */
+  .accordian .accordian-item {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .accordian button .icon {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordian button .accordian-title {
+    padding: 1em 1.5em 1em 0em;
+    font-size: 16px;
+  }
+
+  .accordian button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .accordian .accordian-item:hover {
+    border: none;
+  }
+
+  /* Footer */
+
+  .footer-body .footer-list {
+    justify-content: space-center;
+    text-align: center;
+  }
+  .footer-body .row h5 {
+    font-size: 12px;
+  }
+  .social-box .white-box {
+    height: 30px;
+    border-top: 1px solid #515151;
+    border-bottom: 1px solid #515151;
+    display: flex;
+    justify-content: space-around;
+  }
+  .social-box .white-box a {
+    text-decoration: none;
+    color: #515151;
+  }
+}
+
+/* FORM SECTION */
+@media (max-width: 791px) {
+  .form-text-column {
+    padding: 2px !important;
+  }
+  .form-body-text {
+    text-align: center;
+  }
+  .form-body-text h1 {
+    font-size: 23px;
+    line-height: normal;
+  }
+  .form-fill {
+    padding: 2px !important;
+  }
+  .form {
+    width: 90%;
+  }
+  .inner-container {
+    height: auto;
+  }
+
+  .btn-groups {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .form-section {
+    height: 100vh;
+  }
+  .color-bar {
+    width: 77%;
+    height: 20px;
+    background: var(--primary-color);
+    position: absolute;
+    top: 4px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .form-text-column {
+    padding: 2px !important;
+  }
+  .form-body-text {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .form-body-text h1 {
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+    line-height: normal;
+    color: var(--primary-color);
+  }
+  .form-fill {
+    padding: 2px !important;
+    margin-top: 15px;
+    padding-top: 12px;
+  }
+  .form-step::-webkit-scrollbar {
+    display: none;
+  }
+  .form {
+    width: 90%;
+    box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  .primary-button,
+  .secondary-button,
+  .tertiary-button {
+    padding: 10px 15px;
+  }
+  .bi-calendar,
+  .bi-eye {
+    margin-left: 10px;
+  }
+  .progress-step:last-child::before {
+    top: 48%;
+    left: 94%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .absoulute-container {
+    margin-top: -100px;
+
+    margin-left: 0;
+  }
+  .absoulute-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .about-img img {
+    display: none;
+  }
+}

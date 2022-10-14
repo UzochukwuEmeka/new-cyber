@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #fffbf2;
+}
+
+.faqs-section {
+  background: #f4f6fc;
+}
+.faq-header-section {
+  background-color: #fffbf2;
+}
+
+.faq-body-head h4,
+.faq-sub-header,
+.question {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 26px;
+}
+.faq-sub-header,
+.question {
+  font-size: 18px;
+}
+/* Faqs tabs */
+
+/* Style the tab */
+
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background: #F1F1F1;
+  width: 287px;
+  height: 146px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 16px;
+  transition: 0.3s;
+  /* box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: blue;
+  color: #FEFEFE;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+
+  border-top: none;
+}
