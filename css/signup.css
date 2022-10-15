@@ -9,9 +9,17 @@
 .signup-links:hover {
   color: #ffb700;
 }
-.login-form{
-height: 60%;
-
+.login-form {
+  height: 60%;
+}
+.app-guide-link {
+  text-decoration: none;
+  color: #2354d1;
+  transition: 1s;
+}
+.app-guide-link:hover {
+  color: #2354d1;
+  font-size: 19px;
 }
 .fa,
 .bi {
