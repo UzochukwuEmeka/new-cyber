@@ -270,6 +270,9 @@
 .academics {
   padding-left: 6px !important;
 }
+.important {
+  color: red;
+}
 /* Link to sign in form */
 .account-text {
   margin: 0 auto;
