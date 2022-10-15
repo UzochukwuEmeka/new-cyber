@@ -134,6 +134,11 @@ body {
   overflow: hidden;
   object-fit: cover;
 }
+.fellows-image img:hover {
+  width: 86px;
+  height: 86px;
+  transition: 0.5s;
+}
 .fellows-image .fellows-name {
   text-decoration: underline;
   font-family: "Poppins", sans-serif;
