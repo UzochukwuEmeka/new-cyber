@@ -29,7 +29,7 @@ body {
 }
 .secondary-button:hover {
   transform: scale(0.98);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .tertiary-button:hover {
   color: var(--secondary-color);
@@ -40,7 +40,7 @@ body {
   background: var(--primary-color);
   outline: var(--primary-color);
   border: 1px solid var(--primary-color);
-   color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 .tertiary-button {
   background: var(--primary-color);
