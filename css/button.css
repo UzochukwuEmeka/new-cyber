@@ -37,11 +37,11 @@ body {
 }
 
 .secondary-button {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   outline: var(--primary-color);
   border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+   color: var(--secondary-color);
 }
 .tertiary-button {
-  background: #2e2e30;
+  background: var(--primary-color);
 }
