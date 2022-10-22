@@ -71,8 +71,8 @@
   color: #fefefe;
 }
 .identity-image img {
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
 .identity {
