@@ -71,8 +71,8 @@
   color: #fefefe;
 }
 .identity-image img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
 .identity {
@@ -88,6 +88,8 @@
 }
 .application-guide-row .card {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+.application-guide-text {
 }
 .telephone-img {
   width: 386px;

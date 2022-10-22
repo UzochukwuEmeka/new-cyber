@@ -223,8 +223,10 @@ body {
   font-weight: 700 !important;
   font-size: 30px !important ;
   line-height: 45px !important;
-
   color: #2e2e30;
+}
+.application-guide-text h4 {
+  font-size: 24px !important ;
 }
 /* FAQ */
 .faq {
