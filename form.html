@@ -107,13 +107,13 @@
                                     <div class="form-step formstep-active mt-2">
                                         <h5 class="inner-header">Personal Details</h5>
                                         <div class="field mb-5">
-                                            <input type="text" name="username" id="username" class="input" placeholder="First Name *">
+                                            <input type="text" name="username" id="username" class="input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="First Name *">
                                         </div>
                                         <div class="field mb-5">
-                                            <input type="text" name="username" id="username" class="input" placeholder="Last Name *">
+                                            <input type="text" name="username" id="username" class="input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="Last Name *">
                                         </div>
                                         <div class="field mb-5">
-                                            <input type="" name="username" id="username" class="input" placeholder="Other Name(s) * ">
+                                            <input type="text" name="username" id="username" class="input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="Other Name(s) * ">
                                         </div>
                                         <div class="field mb-5">
                                             <input type="text" name="username" id="username" class="input" onfocus="(this.type='datetime-local')" placeholder="Date of Birth *">
