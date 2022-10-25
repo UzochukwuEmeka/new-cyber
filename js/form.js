@@ -72,3 +72,41 @@ function removeBtn() {
   nextBtn.style.display = "none";
 }
 
+const input = document.getElementById("experience");
+const wordscount = document.getElementById("wordscount");
+const namea = document.getElementById("name");
+
+// input.addEventListener("input", () => {
+//   var a = input.value.length;
+//   var split = input.value.split("");
+//   obj = {};
+//   for (i = 0; i < split.length; i++) {
+//     if (obj[split[i]] === undefined) {
+//       obj[split[i]] = 1;
+//     } else {
+//       obj[split[i]]++;
+//     }
+//   }
+//   var x = obj["dornel"];
+//   if (x === undefined) {
+//     console.log("err");
+//   } else {
+//     namea.innerHTML = `dornel : ${x} Times`;
+//   }
+//   demo.textContent = input.value.length + "/30";
+//   if (a === 30) {
+//     demo.style.color = "red";
+//   } else {
+//     demo.style.color = "green";
+//   }
+// });
+input.addEventListener("input", function () {
+  let words = input.value;
+  let wordsTrim = words.replace(/\s+/g, " ").trim();
+  let splitWord = wordsTrim.split(" ");
+  if (splitWord[0] == "") {
+    numberOfWords = 0;
+  }
+  let numberOfWords = splitWord.length;
+  wordscount.innerHTML = numberOfWords;
+});
