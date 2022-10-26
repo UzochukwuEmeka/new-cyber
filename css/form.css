@@ -46,7 +46,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .width-50 {
   width: 50%;
 }
@@ -279,4 +278,18 @@
 .account-text {
   margin: 0 auto;
   text-align: center;
+}
+
+.wordscounts,
+.hyper-text {
+  margin-top: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  display: none;
+}
+.hyper-text {
+  display: block;
+  color: red;
 }

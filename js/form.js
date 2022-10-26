@@ -74,33 +74,14 @@ function removeBtn() {
 
 const input = document.getElementById("experience");
 const wordscount = document.getElementById("wordscount");
+const wordscounts = document.querySelector(".wordscounts");
 const namea = document.getElementById("name");
+const count = 200;
 
-// input.addEventListener("input", () => {
-//   var a = input.value.length;
-//   var split = input.value.split("");
-//   obj = {};
-//   for (i = 0; i < split.length; i++) {
-//     if (obj[split[i]] === undefined) {
-//       obj[split[i]] = 1;
-//     } else {
-//       obj[split[i]]++;
-//     }
-//   }
-//   var x = obj["dornel"];
-//   if (x === undefined) {
-//     console.log("err");
-//   } else {
-//     namea.innerHTML = `dornel : ${x} Times`;
-//   }
-//   demo.textContent = input.value.length + "/30";
-//   if (a === 30) {
-//     demo.style.color = "red";
-//   } else {
-//     demo.style.color = "green";
-//   }
-// });
 input.addEventListener("input", function () {
+  wordscounts.style.display = "block";
+  input.disabled = false;
+
   let words = input.value;
   let wordsTrim = words.replace(/\s+/g, " ").trim();
   let splitWord = wordsTrim.split(" ");
@@ -108,5 +89,64 @@ input.addEventListener("input", function () {
     numberOfWords = 0;
   }
   let numberOfWords = splitWord.length;
+
   wordscount.innerHTML = numberOfWords;
+  if (numberOfWords == count) {
+    wordscount.innerHTML = "You have reach your limited amount of words";
+    wordscount.style.color = "red";
+    input.disabled = true;
+  }
 });
+
+// const firstName = document.getElementById("username");
+// const password = document.getElementById("password");
+// const comfirmpassword = document.getElementById("comfirm-password");
+// const email = document.getElementById("email");
+
+// // validation color
+// const green = "#4CAF50";
+// const red = "#F44336";
+
+// function validateFirstName() {
+//   // check if empty
+//   if (checkIfEmpty(firstName)) return;
+//   // check for onlly letter
+//   if (!checkIfOnlyLetters(firstName)) return;
+//   return true;
+// }
+
+// function checkIfEmpty(field) {
+//   if (isEmpty(field.value.trim())) {
+//     // set field invalid
+//     setInvalid(field, `${field.name}must not be empty`);
+//     return true;
+//   } else {
+//     // set field vaild
+//     setvalid(field);
+//     return false;
+//   }
+// }
+
+// function isEmpty(value) {
+//   if (value === "") return true;
+//   return false;
+// }
+// function setInvalid(field, message) {
+//   field.className = "invalid";
+//   field.nextElementSibling.innerHTML = message;
+//   field.nextElementSibling.style.color = red;
+// }
+// function setvalid(field) {
+//   field.className = "valid";
+//   field.nextElementSibling.innerHTML = "";
+//   field.nextElementSibling.style.color = green;
+// }
+
+// function checkIfOnlyLetters(field) {
+//   if (/^[a-zA-Z ]+$/.test(field.value)) {
+//     setvalid(field);
+//     return true;
+//   } else {
+//     setInvalid(field, `${field.name} must contain only letters`);
+//   }
+// }

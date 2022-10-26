@@ -82,19 +82,31 @@
                                 <div class="inner-form">
                                     <div class="form-step formstep-active mt-5">
                                         <h5 class="inner-header">Sign Up</h5>
-                                        <div class="field mb-5">
-                                            <input type="text" name="username" id="username" class="input" placeholder="Username *">
+                                        <div class="forms-controls mt-4">
+                                            <div class="field  pt-2">
+                                                <input type="text" name="username" id="username" class="input" placeholder="Username *" onfocusout="validateUsername() ">
+                                            </div>
+                                            <small class="hyper-text"></small>
                                         </div>
-                                        <div class="field mb-5">
-                                            <input type="email" name="username" id="email" class="input" placeholder="Email Address *">
+                                        <div class="forms-controls mt-4">
+                                            <div class="field pt-2 ">
+                                                <input type="email" name="username" id="email" class="input" placeholder="Email Address *" onfocusout="validateEmail() ">
+                                            </div>
+                                            <small class="hyper-text"></small>
                                         </div>
-                                        <div class="field mb-5">
-                                            <input type="password" name="password" id="password" class="input" placeholder="Password * ">
-                                            <i class="bi bi-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                        <div class="forms-controls mt-4">
+                                            <div class="field pt-2">
+                                                <input type="password" name="password" id="password" class="input" placeholder="Password * " onfocusout="validatePassword() ">
+                                                <i class="bi bi-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                            </div>
+                                            <small class="hyper-text"></small>
                                         </div>
-                                        <div class="field mb-5">
-                                            <input type="password" name="comfirm-password" id="comfirm-password" class="input" placeholder="Confirm Password *">
-                                            <i class="bi bi-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                        <div class="forms-controls mt-4">
+                                            <div class="field pt-2">
+                                                <input type="password" name="comfirm-password" id="comfirm-password" class="input" placeholder="Confirm Password *" onfocusout="validatePassword2() ">
+                                                <i class="bi bi-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                            </div>
+                                            <small class="hyper-text"></small>
                                         </div>
                                         <span class=" ">
                                             <span class="me-1 signup-text">
@@ -111,7 +123,7 @@
                                         </span>
                                     </div>
                                     <div class="btn-groups  ">
-                                        <a href="#" class="primary-button   btns" id="next-btn">
+                                        <a href="#" class="primary-button  validate-btn  btns" id="next-btn">
                                             Sign Up
                                             <i class="fa-solid fa-arrow-right ms-2"></i>
                                         </a>
@@ -154,5 +166,6 @@
         </section>
     </body>
     <script src="js/form.js"></script>
+    <script src="js/validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
