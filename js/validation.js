@@ -1,71 +1,117 @@
-const firstName = document.getElementById("username");
-const password = document.getElementById("password");
-const comfirmpassword = document.getElementById("comfirm-password");
-const email = document.getElementById("email");
+let nameError = document.getElementById("nameError");
+let LastError = document.getElementById("LastError");
+let EmailError = document.getElementById("EmailError");
 const button = document.querySelector(".validate-btn");
+let PaswordError = document.getElementById("PaswordError");
+let ComfirmError = document.getElementById("ComfirmError");
 
-// show error function
-function showError(input, message) {
-  //   const formcontrol = document.querySelector(".forms-controls");
-  const formcontrol = input.parentElement.parentElement;
-  const small = formcontrol.querySelector("small");
-  small.innerText = message;
-}
-function showSuccess(input, message) {
-  const formcontrol = input.parentElement.parentElement;
-  const small = formcontrol.querySelector("small");
-  small.innerText = message;
-}
-function isvalidEmail(email) {
-  const re =
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
-}
-function passwordValidate(password) {
-  const pass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
-  return pass.test(password);
+function onClick(event) {
+  event.preventDefault();
 }
 
 function validateUsername() {
-  if (firstName.value === "") {
-    showError(firstName, "Username is requried");
-  } else {
-    showSuccess(firstName, "");
-  }
-}
+  let name = document.getElementById("username").value;
+  if (name.length == 0) {
+    nameError.innerHTML = "Name is required";
 
-function validateEmail() {
-  if (email.value === "") {
-    showError(email, "Email is requried");
-  } else if (!isvalidEmail(email.value)) {
-    showError(email, "Email is not valid");
-  } else {
-    showSuccess(email, "");
+    return false;
   }
+  if (!name.match("([a-zA-Z]{3,30}s*)+")) {
+    nameError.innerHTML = "Write your First name";
+    return false;
+  }
+  nameError.innerHTML = " ";
+  return true;
+}
+function validateLastname() {
+  let lname = document.getElementById("lastname").value;
+  if (lname.length == 0) {
+    LastError.innerHTML = "Last name is required";
+    return false;
+  }
+  if (!lname.match("[a-zA-Z]{3,30}")) {
+    LastError.innerHTML = "Write your Last name";
+    return false;
+  }
+  LastError.innerHTML = " ";
+  return true;
+}
+function validateEmail() {
+  let email = document.getElementById("email").value;
+  if (email.length == 0) {
+    EmailError.innerHTML = " Email is required";
+    return false;
+  }
+  if (
+    !email.match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )
+  ) {
+    EmailError.innerHTML = " Email is invalid";
+    return false;
+  }
+  EmailError.innerHTML = " ";
+  return true;
 }
 function validatePassword() {
-  if (password.value === "") {
-    showError(password, "Password is requried");
-  } else if (!passwordValidate(password.value)) {
-    showError(
-      password,
-      "Password must contain  6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter"
-    );
-  } else {
-    showSuccess(password, "");
+  let pass = document.getElementById("password").value;
+  if (pass.length == 0) {
+    PaswordError.innerHTML = "Password is required";
+    return false;
   }
+  if (
+    !pass.match(
+      /^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/
+    )
+  ) {
+    PaswordError.innerHTML =
+      "Password must contain  minimum of 8 characters which contain at least one numeric digit, one uppercase , one lowercase letter and a special character";
+
+    return false;
+  }
+  PaswordError.innerHTML = " ";
+  return true;
 }
 function validatePassword2() {
-  if (comfirmpassword.value === "") {
-    showError(comfirmpassword, "Comfirm password is requried");
+  let pass = document.getElementById("password").value;
+
+  let pass2 = document.getElementById("comfirm-password").value;
+  if (pass2.length == 0) {
+    ComfirmError.innerHTML = "Password is required";
+    return false;
+  }
+  if (pass != pass2) {
+    ComfirmError.innerHTML = "Password must be the same";
+
+    return false;
+  }
+  ComfirmError.innerHTML = " ";
+  return true;
+}
+function isChecked() {
+  if (document.getElementById("terms-service").checked) {
+    return true;
   } else {
-    showSuccess(comfirmpassword, "");
+    return false;
   }
 }
 
-button.addEventListener("click", function () {
-  validateUsername();
-  validateEmail();
-  validatePassword();
-  validatePassword2();
-});
+function validateForm() {
+  if (
+    !validateUsername() ||
+    !validateLastname() ||
+    !validateEmail() ||
+    !validatePassword() ||
+    !validatePassword2() ||
+    !isChecked()
+  ) {
+    console.log("jake");
+
+    document.getElementById("next-btn").disabled = true;
+    return false;
+  } else {
+    console.log("wer");
+    document.getElementById("next-btn").disabled = false;
+    return true;
+  }
+}

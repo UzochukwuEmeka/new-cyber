@@ -86,27 +86,33 @@
                                             <div class="field  pt-2">
                                                 <input type="text" name="username" id="username" class="input" placeholder="Username *" onfocusout="validateUsername() ">
                                             </div>
-                                            <small class="hyper-text"></small>
+                                            <small class="hyper-text" id="nameError"></small>
+                                        </div>
+                                        <div class="forms-controls mt-4">
+                                            <div class="field  pt-2">
+                                                <input type="text" name="username" id="lastname" class="input" placeholder="Lastname *" onfocusout="validateLastname()">
+                                            </div>
+                                            <small class="hyper-text" id="LastError"></small>
                                         </div>
                                         <div class="forms-controls mt-4">
                                             <div class="field pt-2 ">
                                                 <input type="email" name="username" id="email" class="input" placeholder="Email Address *" onfocusout="validateEmail() ">
                                             </div>
-                                            <small class="hyper-text"></small>
+                                            <small class="hyper-text" id="EmailError"></small>
                                         </div>
                                         <div class="forms-controls mt-4">
                                             <div class="field pt-2">
                                                 <input type="password" name="password" id="password" class="input" placeholder="Password * " onfocusout="validatePassword() ">
                                                 <i class="bi bi-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
                                             </div>
-                                            <small class="hyper-text"></small>
+                                            <small class="hyper-text" id="PaswordError"></small>
                                         </div>
                                         <div class="forms-controls mt-4">
                                             <div class="field pt-2">
                                                 <input type="password" name="comfirm-password" id="comfirm-password" class="input" placeholder="Confirm Password *" onfocusout="validatePassword2() ">
                                                 <i class="bi bi-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
                                             </div>
-                                            <small class="hyper-text"></small>
+                                            <small class="hyper-text" id="ComfirmError"></small>
                                         </div>
                                         <span class=" ">
                                             <span class="me-1 signup-text">
